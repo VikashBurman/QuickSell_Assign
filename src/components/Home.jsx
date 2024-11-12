@@ -18,9 +18,6 @@ import profile from './assets/profile.png';
 function Home() {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [isGroupingVisible, setIsGroupingVisible] = useState(false);
-
-
-
   const [isOrderingVisible, setIsOrderingVisible] = useState(false);
 
   const [selectedGrouping, setSelectedGrouping] = useState(() => localStorage.getItem('selectedGrouping') || 'Status');
@@ -28,9 +25,6 @@ function Home() {
   
   const [tickets, setTickets] = useState([]);
   const [users, setUsers] = useState([]);
-
- 
-
 
   useEffect(() => {
     fetch('https://api.quicksell.co/v1/internal/frontend-assignment')
@@ -240,7 +234,6 @@ function Home() {
           </div>
         ))}
       </div>
-      <div className="footer" style={{fontSize:'12px'}}>Created by Surya M.U / musurya2014@gmail.com</div>
     </div>
   );
 }

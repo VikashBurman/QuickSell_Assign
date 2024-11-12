@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Card.css';
-// import options from './assets/3 dot menu.svg';
 import circle from './assets/image.png';
 import urgent from './assets/SVG - Urgent Priority colour.svg';
 import high from './assets/Img - High Priority.svg';
@@ -40,7 +39,8 @@ function Card({ id, title, tag, priority }) {
         {tag.length > 0 && (
           <span className='card-tag'>
             {/* console.log(tag); */}
-            <img src={circle} alt="Tag Icon" /> {tag[0]}
+            {/* <img src={circle} alt="Tag Icon" /> {tag[0]} */}
+            {tag[0]}
           </span>
         )}
       </span>
